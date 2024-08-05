@@ -14,9 +14,6 @@ server:
 spring:
   application:
     name: aidada-backend
-  # 默认 dev 环境
-  profiles:
-    active: prod
   # 支持 swagger3
   mvc:
     pathmatch:
