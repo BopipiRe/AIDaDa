@@ -1,7 +1,7 @@
 # 线上配置文件
 server:
   address: 0.0.0.0
-  port: 8081
+  port: 8801
   servlet:
     context-path: /api
     session:
