@@ -3,7 +3,7 @@ import { Message } from "@arco-design/web-vue";
 
 export const isDev = process.env.NODE_ENV === "development";
 const myAxios = axios.create({
-  baseURL: isDev ? "http://localhost:8081" : "https://aidada-backend-117460-7-1306664184.sh.run.tcloudbase.com",
+  baseURL: isDev ? "http://localhost:8081" : "https://aidada-backend-117511-7-1306664184.sh.run.tcloudbase.com",
   timeout: 60000,
   withCredentials: true
 });
