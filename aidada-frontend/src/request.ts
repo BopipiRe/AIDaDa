@@ -1,19 +1,20 @@
 import axios from "axios";
 import { Message } from "@arco-design/web-vue";
 
+export const isDev = process.env.NODE_ENV === "development";
 const myAxios = axios.create({
-  baseURL: "http://localhost:8081",
+  baseURL: isDev ? "http://localhost:8081" : "https://aidada-backend-117460-7-1306664184.sh.run.tcloudbase.com",
   timeout: 60000,
-  withCredentials: true,
+  withCredentials: true
 });
 
 // 全局请求拦截器
 myAxios.interceptors.request.use(
-  function (config) {
+  function(config) {
     // Do something before request is sent
     return config;
   },
-  function (error) {
+  function(error) {
     // Do something with request error
     return Promise.reject(error);
   }
@@ -21,7 +22,7 @@ myAxios.interceptors.request.use(
 
 // 全局响应拦截器
 myAxios.interceptors.response.use(
-  function (response) {
+  function(response) {
     console.log(response);
     // Any status code that lie within the range of 2xx cause this function to trigger
     // Do something with response data
@@ -41,7 +42,7 @@ myAxios.interceptors.response.use(
 
     return response;
   },
-  function (error) {
+  function(error) {
     // Any status codes that falls outside the range of 2xx cause this function to trigger
     // Do something with response error
     return Promise.reject(error);

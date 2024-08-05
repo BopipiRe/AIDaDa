@@ -134,7 +134,7 @@ const handleSSESubmit = async () => {
   // 创建 SSE 请求
   const eventSource = new EventSource(
     // 手动填写完整的后端地址
-    "http://localhost:8081/api/question/ai_generate/sse" +
+    "https://aidada-backend-117460-7-1306664184.sh.run.tcloudbase.com/api/question/ai_generate/sse" +
       `?appId=${props.appId}&optionNumber=${form.optionNumber}&questionNumber=${form.questionNumber}`
   );
   let first = true;
