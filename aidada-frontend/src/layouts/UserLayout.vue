@@ -3,17 +3,15 @@
     <a-layout style="height: 100vh">
       <a-layout-header class="header">
         <a-space>
-          <img class="logo" src="../assets/logo.png" />
+          <img class="logo" src="../assets/logo.png"/>
           <div>鱼答答 AI 答题应用平台</div>
         </a-space>
       </a-layout-header>
       <a-layout-content class="content">
-        <router-view />
+        <router-view/>
       </a-layout-content>
       <a-layout-footer class="footer">
-        <a href="https://www.code-nav.cn" target="_blank">
-          编程导航 by 程序员鱼皮
-        </a>
+        <p>AI智能答題 by Bopipi </p>
       </a-layout-footer>
     </a-layout>
   </div>
@@ -24,8 +22,7 @@
 <style scoped>
 #userLayout {
   text-align: center;
-  background: url("https://gw.alipayobjects.com/zos/rmsportal/FfdJeJRQWjEeGTpqgBKj.png")
-    0% 0% / 100% 100%;
+  background: url("https://gw.alipayobjects.com/zos/rmsportal/FfdJeJRQWjEeGTpqgBKj.png") 0% 0% / 100% 100%;
 }
 
 #userLayout .logo {

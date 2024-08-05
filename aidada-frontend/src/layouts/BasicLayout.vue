@@ -2,13 +2,13 @@
   <div id="basicLayout">
     <a-layout style="height: 100vh">
       <a-layout-header class="header">
-        <GlobalHeader />
+        <GlobalHeader/>
       </a-layout-header>
       <a-layout-content class="content">
-        <router-view />
+        <router-view/>
       </a-layout-content>
       <a-layout-footer class="footer">
-        <p>AI答题应用平台 by 程序员Bopipi</p>
+        <p>AI智能答題 by Bopipi </p>
       </a-layout-footer>
     </a-layout>
   </div>
@@ -28,9 +28,9 @@ import GlobalHeader from "@/components/GlobalHeader.vue";
 }
 
 #basicLayout .content {
-  box-sizing: border-box;
-  width: 100%;
   max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 auto 28px;
   padding: 20px;
   background: linear-gradient(to right, #fefefe, #fff);
